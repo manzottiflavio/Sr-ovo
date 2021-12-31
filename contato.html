@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+  
+  img{
+    width: 100%;
+    height: 400px;
+  } 
+  
+  .rodape{
+    background-color: yellow;
+    text-align: center;
+  }
+  .meio{
+    background-color: rgb(48, 58, 206);
+  }
+  interno{
+    width: 100%;
+    height: 600px;
+  }
+  footer{
+    text-align: center;
+    text-decoration: white;
+    background-color: rgb(209, 209, 219);
+    height: 190px;
+    padding-top: 10px;
+    
+  }
+</style>
+<body>
+  <nav class=" navbar navbar-expand-lg navbar-dark bg-warning ">
+    
+    <a class="navbar-brand" href="#">DISTRIBUIDORA SENHOR OVO</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#textoNavbar" aria-controls="textoNavbar" aria-expanded="false" aria-label="Alterna navegação">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="textoNavbar">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#" onclick="home()">Home <span class="sr-only">(Página atual)</span></a>
+        </li>
+       
+        <li class="nav-item">
+          <a class="nav-link" href="#" onclick="pedidos()">Pedidos</a>
+        </li>
+      </ul>
+      <span class="navbar-text">
+        
+        SEMPRE AS MELHORS OFERTAS
+      </span>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <form>
+    <div class=" interno container"></div>
+    <div class=" meio form-row  text-white">
+      <div class="form-group col-lg-12 col-sm-12">
+        <label for="inputEmail4">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+      </div>
+      <div class="form-group col-lg-12 col-sm-12">
+        <label for="inputPassword4">Senha</label>
+        <input type="password" class="form-control" id="inputPassword4" placeholder="Senha">
+      </div>
+    </div>
+    <div class=" meio form-group text-white">
+      <label for="inputAddress">Endereço</label>
+      <input type="text" class="form-control" id="inputAddress" placeholder="Rua dos Bobos, nº 0">
+    </div>
+    <div class="meio form-row text-white">
+      <div class="form-groupcol-lg-12 col-sm-12">
+        <label for="inputCity">Cidade</label>
+        <select  id="inputCity" class="form-control">
+          <option selected>Escolher...</option>
+          <option >São José dos Campos</option>
+        </select>
+      
+      </div>
+      <div class="form-groupcol-lg-12 col-sm-12">
+        <label for="inputEstado">Estado</label>
+        <select id="inputEstado" class="form-control">
+          <option selected>Escolher...</option>
+          <option>São Paulo</option>
+        </select>
+      </div>
+      <div class="form-group col-lg-12 col-sm-12">
+        <label for="inputCEP">CEP</label>
+        <input type="text" class="form-control" id="inputCEP">
+      </div>
+    </div>
+    <div class=" meio form-group text-white">
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" id="gridCheck">
+        <label class="form-check-label" for="gridCheck">
+          Li e concordo com os termos de privacidade.
+        </label>
+      </div>
+      <button type="button"  class="btn btn-primary" onclick="alert('Este site é apenas um demonstrativo de abilidade estudantil sem fim lucrativos ou empresariais')".>Entrar</button>
+
+    </div>
+    
+  </form>
+  
+  <footer>
+    <div class=" container col-sm-12 col-lg-12">
+      <div><img src="img/zeebeer-preta.png" alt="" ></div>
+      <div class="btn-group text-white my-3 shadow-sm">
+        
+        <a href="http://facebook.com" target="_blank" >
+        </a><i class="fab fa-facebook text-primary"></i>
+        
+        <a href="http://twitter.com" target="_blank" >
+        </a><i class="fab fa-twitter text-primary "></i>
+        
+        <a href="http://instagram.com" target="_blank" >
+        </a><i class="fab fa-instagram text-primary"></i>
+      </div>
+      <small>
+        <p>&copy;2019 - @pesca livreBR</p>
+      </small>
+      <p>Pesca livre"a melhor pescaria"</p>
+    </div>
+    
+    
+  </div>
+</footer>
+
+<script>
+  
+  
+  
+  function pedidos(pedidos){
+    window.location.href="pedidos.html"
+  }
+
+  function home(home){
+    window.location.href="index.html"
+  }
+  
+  
+  
+</script>
+<script src="https://kit.fontawesome.com/864f451b38.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<!--esta duas linhas  de cima do cdn tem que ir em cima desta de baixo senâo nao funciona--> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+</body>
+
+
+
+</html>
